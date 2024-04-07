@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perodic Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Spice&family=Dancing+Script:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Kalam:wght@300;400;700&family=Madimi+One&family=Nabla&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Spice&family=Dancing+Script:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Kalam:wght@300;400;700&family=Madimi+One&family=Nabla&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Spice&family=Dancing+Script:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Kalam:wght@300;400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Madimi+One&family=Nabla&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        background: #0F2027;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+        /* Chrome 10-25, Safari 5.1-6 */
+        /* background: linear-gradient(to right, #2C5364, #203A43, #0F2027); */
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        width: auto;
+        color: whitesmoke;
+        margin: 2px;
+        padding: 2px;
+
+    }
+
+    .perodictable {
+        display: flex;
+        /* border: 3px solid red; */
+        width: 100vw;
+        height: auto;
+        gap: 12px;
+        margin: 15px;
+        padding: 10px;
+        /* flex-wrap: wrap; */
+    }
+
+    .para1 {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Bungee Spice", sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        font-style: oblique;
+    }
+
+    .part1 {
+        display: flex;
+        gap: 12px;
+    }
+
+    .left {
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        border: 2px solid greenyellow;
+        width: 82px;
+        height: 82px;
+    }
+
+    .left a {
+        text-decoration: none;
+        color: white;
+        font-family: "PT Serif", serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .middle a {
+        text-decoration: none;
+        color: white;
+        font-family: "PT Serif", serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .right a {
+        text-decoration: none;
+        color: white;
+        font-family: "PT Serif", serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .lower a {
+        text-decoration: none;
+        color: white;
+        font-family: "PT Serif", serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .firstcolumn {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        gap: 12px;/
+    }
+
+    .secondcolumn {
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 35%;
+        /* justify-content: end; */
+    }
+
+    .thirdcolumn {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 105%;
+        /* justify-content: end; */
+    }
+
+    .middle {
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        border: 2px solid greenyellow;
+        width: 82px;
+        height: 82px;
+
+    }
+
+    .middlepart {
+        display: flex;
+        /* margin-top: 20%; */
+        gap: 12px;
+    }
+
+    .column1 {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 34%;
+
+    }
+
+    .column2 {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 34%;
+    }
+
+    .column3 {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 34%;
+    }
+
+    .column4 {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 34%;
+    }
+
+    .column5 {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 34%;
+    }
+
+    .column6 {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 34%;
+    }
+
+    .column7 {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 34%;
+    }
+
+    .column8 {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 34%;
+    }
+
+    .column9 {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 34%;
+    }
+
+    .rightpart {
+        display: flex;
+        margin-top: 20%;
+        gap: 12px;
+    }
+
+    .right {
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        border: 2px solid greenyellow;
+        width: 82px;
+        height: 82px;
+    }
+
+    .ek1column {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: -36%;
+    }
+
+    .ek2column {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: -36%;
+    }
+
+    .ek3column {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: -36%;
+    }
+
+    .ek4column {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: -36%;
+    }
+
+    .ek5column {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: -36%;
+    }
+
+    .ek6column {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: -53%;
+    }
+
+    .lowerpart {
+        display: flex;
+        flex-direction: column;
+        /* border: 3px solid rebeccapurple; */
+        width: 100vw;
+        height: auto;
+        gap: 12px;
+        margin: 15px;
+        padding: 10px;
+    }
+
+    .lower {
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        border: 2px solid greenyellow;
+        width: 82px;
+        height: 82px;
+    }
+
+    .firstrow {
+        display: flex;
+        /* flex-direction: column; */
+        gap: 12px;
+        /* margin-top: -36%; */
+        margin-left: 19%;
+        margin-right: -8%;
+    }
+
+    .secondrow {
+        display: flex;
+        /* flex-direction: column; */
+        gap: 12px;
+        /* margin-top: -36%; */
+        margin-left: 19%;
+        margin-right: -8%;
+    }
+
+    .nonmetals {
+        background: #FF8008;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FFC837, #FF8008);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FFC837, #FF8008);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .alkalimetals {
+        background: #4776E6;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #8E54E9, #4776E6);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .alkalinemetals {
+        background: #ff00cc;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #333399, #ff00cc);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .transitionmetals {
+        background: #bc4e9c;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #f80759, #bc4e9c);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    .noblegas {
+        background: #FF416C;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FF4B2B, #FF416C);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .posttransitionmetals {
+        background: #00F260;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0575E6, #00F260);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0575E6, #00F260);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    .actinoid {
+        background: #DCE35B;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #45B649, #DCE35B);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #45B649, #DCE35B);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .rareelements {
+        /* background: #43cea2;  fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #185a9d, #43cea2);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #185a9d, #43cea2);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .metalloids {
+        background: #0575E6;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #021B79, #0575E6);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .unknownelements {
+        background: #bdc3c7;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2c3e50, #bdc3c7);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .grouping {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grouping li {
+        display: inline-block;
+        border: 2px solid black;
+        border-radius: 15%;
+        list-style: none;
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 22px;
+        padding: 2px;
+        margin: 5px;
+        /* text-transform: uppercase; */
+    }
+    .left:hover{
+        transition: .5s;
+        transform: scale(1.5);
+        /* transition: ease-out; */
+    }
+    .middle:hover{
+        transition: .6s;
+        transform: scale(1.5);
+    }
+    .right:hover{
+        transition: .6s;
+        transform: scale(1.5);
+    }
+    .lower:hover{
+        transition: .6s;
+        transform: scale(1.5);
+    }
+    .grouping li:hover{
+        transition: .6s;
+        transform: scale(1.5);
+    }
+    
+</style>
+
+<body>
+    <div class="para1">
+        <h1>Perodic Table</h1>
+    </div>
+    <div class="perodictable">
+        <div class="part1">
+            <div class="firstcolumn">
+                <div class="left nonmetals"><a href="https://www.chemicool.com/elements/hydrogen.html"
+                        target="_blank">H</a></div>
+                <div class="left alkalimetals"><a href="https://www.chemicool.com/elements/lithium.html"
+                        target="_blank">Li</a></div>
+                <div class="left alkalimetals"><a href="https://www.chemicool.com/elements/sodium.html" target="_blank">
+                        Na</a></div>
+                <div class="left alkalimetals"><a href="https://www.chemicool.com/elements/potassium.html"
+                        target="_blank">K</a>
+                </div>
+                <div class="left alkalimetals"><a href="https://www.chemicool.com/elements/rubidium.html"
+                        target="_blank">Rb</a>
+                </div>
+                <div class="left alkalimetals"><a href="https://www.chemicool.com/elements/cesium.html"
+                        target="_blank">Cs</a></div>
+                <div class="left alkalimetals"><a href="https://www.chemicool.com/elements/francium.html"
+                        target="_blank">Fr</a>
+                </div>
+            </div>
+            <div class="secondcolumn">
+                <div class="left alkalinemetals"><a href="https://www.chemicool.com/elements/beryllium.html"
+                        target="_blank">Be</a>
+                </div>
+                <div class="left alkalinemetals"><a href="https://www.chemicool.com/elements/magnesium.html"
+                        target="_blank">Mg</a>
+                </div>
+                <div class="left alkalinemetals"><a href="https://www.chemicool.com/elements/calcium.html"
+                        target="_blank">Ca</a></div>
+                <div class="left alkalinemetals"><a href="https://www.chemicool.com/elements/strontium.html"
+                        target="_blank">Sr</a>
+                </div>
+                <div class="left alkalinemetals"><a href="https://www.chemicool.com/elements/barium.html"
+                        target="_blank">Ba</a></div>
+                <div class="left alkalinemetals"><a href="https://www.chemicool.com/elements/radium.html"
+                        target="_blank">Ra</a></div>
+            </div>
+            <div class="thirdcolumn">
+                <div class="left transitionmetals"><a href="https://www.chemicool.com/elements/scandium.html"
+                        target="_blank">Sc</a>
+                </div>
+                <div class="left transitionmetals"><a href="https://www.chemicool.com/elements/yttrium.html"
+                        target="_blank">Y</a></div>
+                <div class="left rareelements"><a href="https://www.chemicool.com/elements/lanthanum.html"
+                        target="_blank">La</a>
+                </div>
+                <div class="left actinoid"><a href="https://www.chemicool.com/elements/actinium.html"
+                        target="_blank">Ac</a>
+                </div>
+            </div>
+        </div>
+        <div class="middlepart">
+            <div class="column1">
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/titanium.html"
+                        target="_blank">Ti</a>
+                </div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/zirconium.html"
+                        target="_blank">Zr</a>
+                </div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/hafnium.html"
+                        target="_blank">Hf</a>
+                </div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/rutherfordium.html"
+                        target="_blank">Rf</a></div>
+            </div>
+            <div class="column2">
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/vanadium.html"
+                        target="_blank">V</a>
+                </div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/niobium.html"
+                        target="_blank">Nb</a>
+                </div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/tantalum.html"
+                        target="_blank">Ta</a>
+                </div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/dubnium.html"
+                        target="_blank">Db</a>
+                </div>
+            </div>
+            <div class="column3">
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/chromium.html"
+                        target="_blank">Cr</a>
+                </div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/molybdenum.html"
+                        target="_blank">Mo</a>
+                </div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/tungsten.html"
+                        target="_blank">W</a>
+                </div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/seaborgium.html"
+                        target="_blank">Sg</a>
+                </div>
+            </div>
+            <div class="column4">
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/manganese.html"
+                        target="_blank">Mn</a>
+                </div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/technetium.html"
+                        target="_blank">Tc</a>
+                </div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/rhenium.html"
+                        target="_blank">Re</a>
+                </div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/bohrium.html"
+                        target="_blank">Bh</a>
+                </div>
+            </div>
+            <div class="column5">
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/iron.html"
+                        target="_blank">Fe</a></div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/ruthenium.html"
+                        target="_blank">Ru</a>
+                </div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/osmium.html"
+                        target="_blank">Os</a>
+                </div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/hassium.html"
+                        target="_blank">Hs</a>
+                </div>
+            </div>
+            <div class="column6">
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/cobalt.html"
+                        target="_blank">Co</a>
+                </div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/rhodium.html"
+                        target="_blank">Rh</a>
+                </div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/iridium.html"
+                        target="_blank">Ir</a>
+                </div>
+                <div class="middle unknownelements"><a href="https://www.chemicool.com/elements/meitnerium.html"
+                        target="_blank">Mt</a>
+                </div>
+            </div>
+            <div class="column7">
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/nickel.html"
+                        target="_blank">Ni</a>
+                </div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/palladium.html"
+                        target="_blank">Pd</a>
+                </div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/platinum.html"
+                        target="_blank">Pt</a>
+                </div>
+                <div class="middle  unknownelements"><a href="https://www.chemicool.com/elements/darmstadtium.html"
+                        target="_blank">Ds</a></div>
+            </div>
+            <div class="column8">
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/copper.html"
+                        target="_blank">Cu</a>
+                </div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/silver.html"
+                        target="_blank">Ag</a>
+                </div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/gold.html"
+                        target="_blank">Au</a></div>
+                <div class="middle  unknownelements"><a href="https://www.chemicool.com/elements/roentgenium.html"
+                        target="_blank">Rg</a>
+                </div>
+            </div>
+            <div class="column9">
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/zinc.html"
+                        target="_blank">Zn</a></div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/cadmium.html"
+                        target="_blank">Cd</a>
+                </div>
+                <div class="middle transitionmetals"><a href="https://www.chemicool.com/elements/mercury.html"
+                        target="_blank">Hg</a>
+                </div>
+                <div class="middle unknownelements"><a href="https://www.chemicool.com/elements/copernicium.html"
+                        target="_blank">Cn</a>
+                </div>
+            </div>
+        </div>
+        <div class="rightpart">
+            <div class="ek1column">
+                <div class="right metalloids"><a href="https://www.chemicool.com/elements/boron.html"
+                        target="_blank">B</a></div>
+                <div class="right posttransitionmetals"><a href="https://www.chemicool.com/elements/aluminum.html"
+                        target="_blank">Al</a>
+                </div>
+                <div class="right posttransitionmetals"><a href="https://www.chemicool.com/elements/gallium.html"
+                        target="_blank">Ga</a>
+                </div>
+                <div class="right posttransitionmetals"><a href="https://www.chemicool.com/elements/indium.html"
+                        target="_blank">In</a></div>
+                <div class="right posttransitionmetals"><a href="https://www.chemicool.com/elements/thallium.html"
+                        target="_blank">Ti</a>
+                </div>
+                <div class="right unknownelements"><a href="https://www.chemicool.com/elements/nihonium.html"
+                        target="_blank">Nh</a>
+                </div>
+            </div>
+            <div class="ek2column">
+                <div class="right nonmetals"><a href="https://www.chemicool.com/elements/carbon.html"
+                        target="_blank">C</a></div>
+                <div class="right metalloids"><a href="https://www.chemicool.com/elements/silicon.html"
+                        target="_blank">Si</a>
+                </div>
+                <div class="right metalloids"><a href="https://www.chemicool.com/elements/germanium.html"
+                        target="_blank">Ge</a>
+                </div>
+                <div class="right posttransitionmetals"><a href="https://www.chemicool.com/elements/tin.html"
+                        target="_blank">Sn</a></div>
+                <div class="right posttransitionmetals"><a href="https://www.chemicool.com/elements/lead.html"
+                        target="_blank">Pb</a></div>
+                <div class="right unknownelements"><a href="https://www.chemicool.com/elements/flerovium.html"
+                        target="_blank">Fl</a>
+                </div>
+            </div>
+            <div class="ek3column">
+                <div class="right nonmetals"><a href="https://www.chemicool.com/elements/nitrogen.html"
+                        target="_blank">N</a>
+                </div>
+                <div class="right nonmetals"><a href="https://www.chemicool.com/elements/phosphorus.html"
+                        target="_blank">P</a>
+                </div>
+                <div class="right metalloids"><a href="https://www.chemicool.com/elements/arsenic.html"
+                        target="_blank">As</a>
+                </div>
+                <div class="right metalloids"><a href="https://www.chemicool.com/elements/arsenic.html"
+                        target="_blank">Sb</a>
+                </div>
+                <div class="right posttransitionmetals"><a href="https://www.chemicool.com/elements/bismuth.html"
+                        target="_blank">Bi</a>
+                </div>
+                <div class="right unknownelements"><a href="https://www.chemicool.com/elements/moscovium.html"
+                        target="_blank">Mc</a>
+                </div>
+            </div>
+            <div class="ek4column">
+                <div class="right nonmetals"><a href="https://www.chemicool.com/elements/oxygen.html"
+                        target="_blank">O</a></div>
+                <div class="right nonmetals"><a href="https://www.chemicool.com/elements/sulfur.html"
+                        target="_blank">S</a></div>
+                <div class="right nonmetals"><a href="https://www.chemicool.com/elements/selenium.html"
+                        target="_blank">Se</a>
+                </div>
+                <div class="right metalloids"><a href="https://www.chemicool.com/elements/tellurium.html"
+                        target="_blank">Te</a>
+                </div>
+                <div class="right posttransitionmetals"><a href="https://www.chemicool.com/elements/polonium.html"
+                        target="_blank">Po</a>
+                </div>
+                <div class="right unknownelements"><a href="https://www.chemicool.com/elements/livermorium.html"
+                        target="_blank">Lv</a>
+                </div>
+            </div>
+            <div class="ek5column">
+                <div class="right nonmetals"><a href="
+                    https://www.chemicool.com/elements/fluorine.html" target="_blank">F</a></div>
+                <div class="right nonmetals"><a href="https://www.chemicool.com/elements/chlorine.html"
+                        target="_blank">Cl</a>
+                </div>
+                <div class="right nonmetals"><a href="https://www.chemicool.com/elements/bromine.html"
+                        target="_blank">Br</a>
+                </div>
+                <div class="right nonmetals"><a href="https://www.chemicool.com/elements/iodine.html"
+                        target="_blank">I</a></div>
+                <div class="right posttransitionmetals"><a href="https://www.chemicool.com/elements/astatine.html"
+                        target="_blank">At</a>
+                </div>
+                <div class="right unknownelements"><a href="https://www.chemicool.com/elements/tennessine.html"
+                        target="_blank">Ts</a>
+                </div>
+            </div>
+            <div class="ek6column">
+                <div class="right noblegas"><a href="https://www.chemicool.com/elements/helium.html"
+                        target="_blank">He</a></div>
+                <div class="right noblegas"><a href="https://www.chemicool.com/elements/neon.html"
+                        target="_blank">Ne</a></div>
+                <div class="right noblegas"><a href="https://www.chemicool.com/elements/argon.html"
+                        target="_blank">Ar</a></div>
+                <div class="right noblegas"><a href="https://www.chemicool.com/elements/krypton.html"
+                        target="_blank">Kr</a>
+                </div>
+                <div class="right noblegas"><a href="https://www.chemicool.com/elements/xenon.html"
+                        target="_blank">Xe</a></div>
+                <div class="right noblegas"><a href="https://www.chemicool.com/elements/radon.html"
+                        target="_blank">Rn</a></div>
+                <div class="right unknownelements"><a href="https://www.chemicool.com/elements/oganesson.html"
+                        target="_blank">Og</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lowerpart">
+        <div class="firstrow">
+            <div class="lower rareelements"><a href="https://www.chemicool.com/elements/cerium.html"
+                    target="_blank">Ce</a></div>
+            <div class="lower rareelements"><a href="https://www.chemicool.com/elements/praseodymium.html"
+                    target="_blank">Pr</a>
+            </div>
+            <div class="lower rareelements"><a href="https://www.chemicool.com/elements/neodymium.html"
+                    target="_blank">Nd</a>
+            </div>
+            <div class="lower rareelements"><a href="https://www.chemicool.com/elements/promethium.html"
+                    target="_blank">Pm</a></div>
+            <div class="lower rareelements"><a href="https://www.chemicool.com/elements/samarium.html"
+                    target="_blank">Sm</a></div>
+            <div class="lower rareelements"><a href="https://www.chemicool.com/elements/europium.html"
+                    target="_blank">Eu</a></div>
+            <div class="lower rareelements"><a href="https://www.chemicool.com/elements/gadolinium.html"
+                    target="_blank">Gd</a></div>
+            <div class="lower rareelements"><a href="https://www.chemicool.com/elements/terbium.html"
+                    target="_blank">Tb</a></div>
+            <div class="lower rareelements"><a href="https://www.chemicool.com/elements/dysprosium.html"
+                    target="_blank">Dy</a></div>
+            <div class="lower rareelements"><a href="https://www.chemicool.com/elements/holmium.html"
+                    target="_blank">Ho</a></div>
+            <div class="lower rareelements"><a href="https://www.chemicool.com/elements/erbium.html"
+                    target="_blank">Er</a></div>
+            <div class="lower rareelements"><a href="https://www.chemicool.com/elements/thulium.html"
+                    target="_blank">Tm</a></div>
+            <div class="lower rareelements"><a href="https://www.chemicool.com/elements/ytterbium.html"
+                    target="_blank">Yb</a></div>
+            <div class="lower rareelements"><a href="https://www.chemicool.com/elements/lutetium.html"
+                    target="_blank">Lu</a></div>
+        </div>
+        <div class="secondrow">
+            <div class="lower actinoid"><a href="https://www.chemicool.com/elements/thorium.html" target="_blank">Th</a>
+            </div>
+            <div class="lower actinoid"><a href="https://www.chemicool.com/elements/protactinium.html"
+                    target="_blank">Pa</a>
+            </div>
+            <div class="lower actinoid"><a href="https://www.chemicool.com/elements/uranium.html" target="_blank">U</a>
+            </div>
+            <div class="lower actinoid"><a href="https://www.chemicool.com/elements/neptunium.html"
+                    target="_blank">Np</a></div>
+            <div class="lower actinoid"><a href="https://www.chemicool.com/elements/plutonium.html"
+                    target="_blank">Pu</a></div>
+            <div class="lower actinoid"><a href="https://www.chemicool.com/elements/americium.html"
+                    target="_blank">Am</a></div>
+            <div class="lower actinoid"><a href="https://www.chemicool.com/elements/curium.html" target="_blank">Cm</a>
+            </div>
+            <div class="lower actinoid"><a href="https://www.chemicool.com/elements/berkelium.html"
+                    target="_blank">Bk</a></div>
+            <div class="lower actinoid"><a href="https://www.chemicool.com/elements/californium.html"
+                    target="_blank">Cf</a>
+            </div>
+            <div class="lower actinoid"><a href="https://www.chemicool.com/elements/einsteinium.html"
+                    target="_blank">Es</a>
+            </div>
+            <div class="lower actinoid"><a href="https://www.chemicool.com/elements/fermium.html" target="_blank">Fm</a>
+            </div>
+            <div class="lower actinoid"><a href="https://www.chemicool.com/elements/mendelevium.html">Md</a></div>
+            <div class="lower actinoid"><a href="https://www.chemicool.com/elements/nobelium.html"
+                    target="_blank">No</a></div>
+            <div class="lower actinoid"><a href="https://www.chemicool.com/elements/lawrencium.html"
+                    target="_blank">Lr</a></div>
+        </div>
+    </div>
+    <div class="grouping">
+        <ul>
+            <li class="transitionmetals">Transition Metals</li>
+            <li class="alkalinemetals">Alkaline-earth Metals</li>
+            <li class="nonmetals">Nonmetals</li>
+            <li class="posttransitionmetals">Post-transition Metals</li>
+            <li class="actinoid">Actinoid</li>
+            <li class="noblegas">Noble gas</li>
+            <li class="alkalimetals">Alkali Metals</li>
+            <li class="metalloids">Metalloids</li>
+            <liclass="rareelements">Rare earth elements</li>
+        </ul>
+    </div>
+    <!-- <script>
+        var sound1 = new Audio();
+        sound1.src = "hover.mp3";
+    </script> -->
+</body>
+
+</html>
